@@ -1,0 +1,34 @@
+<head>
+    <meta charset="utf-8">
+
+    <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+             More info: h5bp.com/b/378 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!--<title>{{  current_view }} | Fastfresh.cn</title>-->
+    <title>VIPData</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <!-- We highly recommend you use SASS and write your custom styles in sass/_custom.scss.
+         However, there is a blank style.css in the css directory should you prefer -->
+    <!--<link rel="stylesheet" href="{{ STATIC_URL }}css/gumby.css"> CSS for the Honey Site-->
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/fruit.css">
+
+    <script src="{{ STATIC_URL }}js/OpenFile.js"></script>
+</head>
+
+<body> 
+ <h1>File API Demo</h1> 
+ <p> 
+ <!-- 用于文件上传的表单元素 --> 
+ <form name="demoForm" id="demoForm" method="post" enctype="multipart/form-data" 
+ action="javascript: uploadAndSubmit(demoForm);"> 
+ <p>Upload File: <input type="file" name="file" /></p> 
+ <p><input type="submit" value="Submit" /></p> 
+ </form> 
+ <div>Progessing (in Bytes): <span id="bytesRead"> 
+ </span> / <span id="bytesTotal"></span> 
+ </div> 
+ </p> 
+ </body> 
